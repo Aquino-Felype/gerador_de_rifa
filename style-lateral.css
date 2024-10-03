@@ -1,7 +1,6 @@
 .container {
     display: flex;
     min-height: 100vh;
-    /* Garante que o container principal ocupe a altura completa da tela */
 }
 
 .sidebar {
@@ -23,19 +22,18 @@
     list-style-type: none;
     padding-left: 0;
     margin-bottom: 20px;
-    /* Espaço entre a lista e o botão */
 }
 
 .sidebar li {
     display: block;
     align-items: center;
-    padding: 10px; /* Adiciona preenchimento à li */
-    background-color: transparent; /* Define a cor padrão da li */
-    transition: background-color 0.3s ease; /* Transição suave no hover */
+    padding: 10px; 
+    background-color: transparent; 
+    transition: background-color 0.3s ease; 
 }
 
 .sidebar i {
-    margin-right: 10px; /* Espaço entre o ícone e o texto */
+    margin-right: 10px; 
     color: #ccc;
 }
 
@@ -43,17 +41,17 @@
     color: #fff;
     display: block;
     text-decoration: none;
-    width: 100%; /* Faz o link ocupar toda a largura */
-    padding: 0; /* Remove padding adicional do link */
+    width: 100%; 
+    padding: 0; 
 }
 
 
 .sidebar li:hover,
-.sidebar .accordion-item.active { /* Estilo para o item ativo do dropdown */
+.sidebar .accordion-item.active { 
     margin-left: -12px;
     margin-right: -12px;
-    background-color: #495057; /* Cor de fundo ao passar o mouse */
-    cursor: pointer; /* Mostra o cursor como ponteiro ao passar o mouse */
+    background-color: #495057; 
+    cursor: pointer;
 }
 
 .sidebar a:hover {
@@ -69,9 +67,7 @@
     border-radius: 5px;
     cursor: pointer;
     margin-top: 20px;
-    /* Espaço entre a lista e o botão */
     width: 100%;
-    /* O botão ocupará toda a largura */
 }
 
 .btn-back:hover {
@@ -80,12 +76,10 @@
 
 .main-content {
     flex-grow: 1;
-    /* O conteúdo principal ocupa o restante do espaço */
     padding: 20px;
     background-color: #f8f9fa;
 }
 
-/* Estilos do Accordion */
 .accordion-item {
     border-bottom: 1px solid #495057;
 }
@@ -99,7 +93,7 @@
     background-color: transparent;
     border: none;
     outline: none;
-    width: 100%; /* Ocupa toda a largura */
+    width: 100%; 
 }
 
 .accordion-content {
@@ -107,15 +101,14 @@
     overflow: hidden;
     transition: max-height 0.3s ease;
     background-color: #495057;
-    padding-left: 20px; /* Para dar a indentação visual */
+    padding-left: 20px;
 }
 
-/* Mostra o dropdown abaixo do Relatório quando expandido */
 .accordion-item.active .accordion-content {
-    max-height: 200px; /* Expande até 200px quando ativo */
+    max-height: 200px;
 }
 
-/* Estilizar os links dentro do dropdown */
+
 .accordion-content a {
     display: block;
     padding: 10px;
